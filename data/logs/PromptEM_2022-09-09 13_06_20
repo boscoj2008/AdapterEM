@@ -1,0 +1,40 @@
+2022-09-09 13:06:20 INFO     ====AdapterEM Args====
+2022-09-09 13:06:20 INFO     seed: 2022
+2022-09-09 13:06:20 INFO     device: cuda
+2022-09-09 13:06:20 INFO     model_name_or_path: roberta-base
+2022-09-09 13:06:20 INFO     model_type: roberta
+2022-09-09 13:06:20 INFO     batch_size: 64
+2022-09-09 13:06:20 INFO     text_summarize: True
+2022-09-09 13:06:20 INFO     learning_rate: 0.0002
+2022-09-09 13:06:20 INFO     max_length: 512
+2022-09-09 13:06:20 INFO     add_token: True
+2022-09-09 13:06:20 INFO     data_name: semi-homo
+2022-09-09 13:06:20 INFO     template_no: 0
+2022-09-09 13:06:20 INFO     self_training: False
+2022-09-09 13:06:20 INFO     dynamic_dataset: -1
+2022-09-09 13:06:20 INFO     k: 1.0
+2022-09-09 13:06:20 INFO     num_iter: 1
+2022-09-09 13:06:20 INFO     pseudo_label_method: uncertainty
+2022-09-09 13:06:20 INFO     confidence_ratio: 0.1
+2022-09-09 13:06:20 INFO     mc_dropout_pass: 10
+2022-09-09 13:06:20 INFO     uncertainty_ratio: 0.05
+2022-09-09 13:06:20 INFO     el2n_ratio: 0.05
+2022-09-09 13:06:20 INFO     save_model: False
+2022-09-09 13:06:20 INFO     only_plm: True
+2022-09-09 13:06:20 INFO     teacher_epochs: 30
+2022-09-09 13:06:20 INFO     student_epochs: 30
+2022-09-09 13:06:20 INFO     test_pseudo_label: 
+2022-09-09 13:06:20 INFO     one_word: False
+2022-09-09 13:06:48 INFO     num_sample_pos: 3207
+2022-09-09 13:06:48 INFO     num_sample_neg: 14016
+2022-09-09 13:06:52 INFO     left size: 2616, right size: 64263
+2022-09-09 13:06:52 INFO     labeled train size: 17223
+2022-09-09 13:06:52 INFO     unlabeled train size: 0
+2022-09-09 13:06:52 INFO     valid size: 5742
+2022-09-09 13:06:52 INFO     test size: 5742
+2022-09-09 13:07:22 INFO     [Current Train Set] Size: 17223 Pos: 3207 Neg: 14016 Per: 1.00 Acc: 1.0000
+2022-09-09 13:07:22 INFO     [Teacher] epoch#1
+2022-09-09 13:07:47 INFO     loss: 0.22211122179610862
+2022-09-09 13:07:55 INFO     [Valid] Precision: 0.8809, Recall: 0.9607, F1: 0.9191
+2022-09-09 13:08:04 INFO     [Test] Precision: 0.8797, Recall: 0.9636, F1: 0.9197
+2022-09-09 13:08:04 INFO     [Teacher] epoch#2

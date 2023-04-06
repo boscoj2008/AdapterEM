@@ -1,0 +1,27 @@
+2022-08-30 16:17:41 INFO     ====PromptEM Args====
+2022-08-30 16:17:41 INFO     seed: 2022
+2022-08-30 16:17:41 INFO     device: cuda
+2022-08-30 16:17:41 INFO     model_name_or_path: roberta-base
+2022-08-30 16:17:41 INFO     model_type: roberta
+2022-08-30 16:17:41 INFO     batch_size: 32
+2022-08-30 16:17:41 INFO     text_summarize: True
+2022-08-30 16:17:41 INFO     learning_rate: 2e-05
+2022-08-30 16:17:41 INFO     max_length: 512
+2022-08-30 16:17:41 INFO     add_token: True
+2022-08-30 16:17:41 INFO     data_name: semi-homo
+2022-08-30 16:17:41 INFO     template_no: 0
+2022-08-30 16:17:41 INFO     self_training: True
+2022-08-30 16:17:41 INFO     dynamic_dataset: -1
+2022-08-30 16:17:41 INFO     k: 0.05
+2022-08-30 16:17:41 INFO     num_iter: 1
+2022-08-30 16:17:41 INFO     pseudo_label_method: uncertainty
+2022-08-30 16:17:41 INFO     confidence_ratio: 0.1
+2022-08-30 16:17:41 INFO     mc_dropout_pass: 10
+2022-08-30 16:17:41 INFO     uncertainty_ratio: 0.05
+2022-08-30 16:17:41 INFO     el2n_ratio: 0.05
+2022-08-30 16:17:41 INFO     save_model: False
+2022-08-30 16:17:41 INFO     only_plm: False
+2022-08-30 16:17:41 INFO     teacher_epochs: 20
+2022-08-30 16:17:41 INFO     student_epochs: 30
+2022-08-30 16:17:41 INFO     test_pseudo_label: 
+2022-08-30 16:17:41 INFO     one_word: False

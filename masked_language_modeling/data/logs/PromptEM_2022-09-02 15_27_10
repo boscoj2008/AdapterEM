@@ -1,0 +1,27 @@
+2022-09-02 15:27:10 INFO     ====PromptEM Args====
+2022-09-02 15:27:10 INFO     seed: 2022
+2022-09-02 15:27:10 INFO     device: cuda
+2022-09-02 15:27:10 INFO     model_name_or_path: roberta-base
+2022-09-02 15:27:10 INFO     model_type: roberta
+2022-09-02 15:27:10 INFO     batch_size: 64
+2022-09-02 15:27:10 INFO     text_summarize: True
+2022-09-02 15:27:10 INFO     learning_rate: 0.0001
+2022-09-02 15:27:10 INFO     max_length: 512
+2022-09-02 15:27:10 INFO     add_token: True
+2022-09-02 15:27:10 INFO     data_name: rel-heter
+2022-09-02 15:27:10 INFO     template_no: 0
+2022-09-02 15:27:10 INFO     self_training: False
+2022-09-02 15:27:10 INFO     dynamic_dataset: -1
+2022-09-02 15:27:10 INFO     k: 0.1
+2022-09-02 15:27:10 INFO     num_iter: 1
+2022-09-02 15:27:10 INFO     pseudo_label_method: uncertainty
+2022-09-02 15:27:10 INFO     confidence_ratio: 0.1
+2022-09-02 15:27:10 INFO     mc_dropout_pass: 10
+2022-09-02 15:27:10 INFO     uncertainty_ratio: 0.05
+2022-09-02 15:27:10 INFO     el2n_ratio: 0.05
+2022-09-02 15:27:10 INFO     save_model: False
+2022-09-02 15:27:10 INFO     only_plm: True
+2022-09-02 15:27:10 INFO     teacher_epochs: 50
+2022-09-02 15:27:10 INFO     student_epochs: 30
+2022-09-02 15:27:10 INFO     test_pseudo_label: 
+2022-09-02 15:27:10 INFO     one_word: False

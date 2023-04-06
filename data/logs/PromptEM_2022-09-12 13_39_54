@@ -1,0 +1,438 @@
+2022-09-12 13:39:54 INFO     ====AdapterEM Args====
+2022-09-12 13:39:54 INFO     seed: 2022
+2022-09-12 13:39:54 INFO     device: cuda
+2022-09-12 13:39:54 INFO     model_name_or_path: bert-vanilla
+2022-09-12 13:39:54 INFO     model_type: bert
+2022-09-12 13:39:54 INFO     batch_size: 32
+2022-09-12 13:39:54 INFO     text_summarize: True
+2022-09-12 13:39:54 INFO     learning_rate: 2e-05
+2022-09-12 13:39:54 INFO     max_length: 512
+2022-09-12 13:39:54 INFO     add_token: True
+2022-09-12 13:39:54 INFO     data_name: semi-heter
+2022-09-12 13:39:54 INFO     template_no: 0
+2022-09-12 13:39:54 INFO     self_training: False
+2022-09-12 13:39:54 INFO     dynamic_dataset: -1
+2022-09-12 13:39:54 INFO     k: 0.1
+2022-09-12 13:39:54 INFO     num_iter: 1
+2022-09-12 13:39:54 INFO     pseudo_label_method: uncertainty
+2022-09-12 13:39:54 INFO     confidence_ratio: 0.1
+2022-09-12 13:39:54 INFO     mc_dropout_pass: 10
+2022-09-12 13:39:54 INFO     uncertainty_ratio: 0.05
+2022-09-12 13:39:54 INFO     el2n_ratio: 0.05
+2022-09-12 13:39:54 INFO     save_model: False
+2022-09-12 13:39:54 INFO     only_plm: True
+2022-09-12 13:39:54 INFO     teacher_epochs: 100
+2022-09-12 13:39:54 INFO     student_epochs: 30
+2022-09-12 13:39:54 INFO     test_pseudo_label: 
+2022-09-12 13:39:54 INFO     adapter_size: 16
+2022-09-12 13:39:54 INFO     one_word: False
+2022-09-12 13:40:29 INFO     num_sample_pos: 47
+2022-09-12 13:40:29 INFO     num_sample_neg: 77
+2022-09-12 13:40:29 INFO     left size: 22133, right size: 23264
+2022-09-12 13:40:29 INFO     labeled train size: 124
+2022-09-12 13:40:29 INFO     unlabeled train size: 1116
+2022-09-12 13:40:29 INFO     valid size: 414
+2022-09-12 13:40:29 INFO     test size: 414
+2022-09-12 13:40:54 INFO     [Current Train Set] Size: 124 Pos: 47 Neg: 77 Per: 0.10 Acc: 1.0000
+2022-09-12 13:40:54 INFO     [Teacher] epoch#1
+2022-09-12 13:40:59 INFO     loss: 0.6879545003175735
+2022-09-12 13:41:01 INFO     [Valid] Precision: 0.0000, Recall: 0.0000, F1: 0.0000
+2022-09-12 13:41:04 INFO     [Test] Precision: 0.0000, Recall: 0.0000, F1: 0.0000
+2022-09-12 13:41:04 INFO     [Teacher] epoch#2
+2022-09-12 13:41:07 INFO     loss: 0.6572058498859406
+2022-09-12 13:41:10 INFO     [Valid] Precision: 1.0000, Recall: 0.0064, F1: 0.0127
+2022-09-12 13:41:13 INFO     [Test] Precision: 0.0000, Recall: 0.0000, F1: 0.0000
+2022-09-12 13:41:13 INFO     [Teacher] epoch#3
+2022-09-12 13:41:16 INFO     loss: 0.6199953854084015
+2022-09-12 13:41:19 INFO     [Valid] Precision: 1.0000, Recall: 0.0255, F1: 0.0497
+2022-09-12 13:41:22 INFO     [Test] Precision: 1.0000, Recall: 0.0126, F1: 0.0248
+2022-09-12 13:41:22 INFO     [Teacher] epoch#4
+2022-09-12 13:41:25 INFO     loss: 0.5429893285036087
+2022-09-12 13:41:28 INFO     [Valid] Precision: 1.0000, Recall: 0.8599, F1: 0.9247
+2022-09-12 13:41:31 INFO     [Test] Precision: 0.9250, Recall: 0.2327, F1: 0.3719
+2022-09-12 13:41:31 INFO     [Teacher] epoch#5
+2022-09-12 13:41:34 INFO     loss: 0.47238050401210785
+2022-09-12 13:41:37 INFO     [Valid] Precision: 0.8902, Recall: 0.9809, F1: 0.9333
+2022-09-12 13:41:40 INFO     [Test] Precision: 0.8421, Recall: 0.5031, F1: 0.6299
+2022-09-12 13:41:40 INFO     [Teacher] epoch#6
+2022-09-12 13:41:43 INFO     loss: 0.43162502348423004
+2022-09-12 13:41:46 INFO     [Valid] Precision: 0.7990, Recall: 0.9873, F1: 0.8832
+2022-09-12 13:41:48 INFO     [Test] Precision: 0.8081, Recall: 0.5031, F1: 0.6202
+2022-09-12 13:41:48 INFO     [Teacher] epoch#7
+2022-09-12 13:41:52 INFO     loss: 0.3510798364877701
+2022-09-12 13:41:55 INFO     [Valid] Precision: 0.6767, Recall: 1.0000, F1: 0.8072
+2022-09-12 13:41:57 INFO     [Test] Precision: 0.7895, Recall: 0.7547, F1: 0.7717
+2022-09-12 13:41:57 INFO     [Teacher] epoch#8
+2022-09-12 13:42:01 INFO     loss: 0.26085086911916733
+2022-09-12 13:42:03 INFO     [Valid] Precision: 0.6408, Recall: 1.0000, F1: 0.7811
+2022-09-12 13:42:06 INFO     [Test] Precision: 0.7849, Recall: 0.8491, F1: 0.8157
+2022-09-12 13:42:06 INFO     [Teacher] epoch#9
+2022-09-12 13:42:09 INFO     loss: 0.19937219098210335
+2022-09-12 13:42:12 INFO     [Valid] Precision: 0.6230, Recall: 1.0000, F1: 0.7677
+2022-09-12 13:42:15 INFO     [Test] Precision: 0.8081, Recall: 0.8742, F1: 0.8399
+2022-09-12 13:42:15 INFO     [Teacher] epoch#10
+2022-09-12 13:42:18 INFO     loss: 0.20255807414650917
+2022-09-12 13:42:21 INFO     [Valid] Precision: 0.6206, Recall: 1.0000, F1: 0.7659
+2022-09-12 13:42:24 INFO     [Test] Precision: 0.7955, Recall: 0.8805, F1: 0.8358
+2022-09-12 13:42:24 INFO     [Teacher] epoch#11
+2022-09-12 13:42:27 INFO     loss: 0.15506465174257755
+2022-09-12 13:42:30 INFO     [Valid] Precision: 0.5433, Recall: 1.0000, F1: 0.7040
+2022-09-12 13:42:33 INFO     [Test] Precision: 0.5882, Recall: 0.9434, F1: 0.7246
+2022-09-12 13:42:33 INFO     [Teacher] epoch#12
+2022-09-12 13:42:36 INFO     loss: 0.12542277574539185
+2022-09-12 13:42:39 INFO     [Valid] Precision: 0.6085, Recall: 1.0000, F1: 0.7566
+2022-09-12 13:42:42 INFO     [Test] Precision: 0.7112, Recall: 0.8365, F1: 0.7688
+2022-09-12 13:42:42 INFO     [Teacher] epoch#13
+2022-09-12 13:42:45 INFO     loss: 0.07862396724522114
+2022-09-12 13:42:48 INFO     [Valid] Precision: 0.5688, Recall: 1.0000, F1: 0.7252
+2022-09-12 13:42:50 INFO     [Test] Precision: 0.7075, Recall: 0.9434, F1: 0.8086
+2022-09-12 13:42:50 INFO     [Teacher] epoch#14
+2022-09-12 13:42:54 INFO     loss: 0.12255443073809147
+2022-09-12 13:42:57 INFO     [Valid] Precision: 0.5970, Recall: 1.0000, F1: 0.7476
+2022-09-12 13:42:59 INFO     [Test] Precision: 0.7108, Recall: 0.9119, F1: 0.7989
+2022-09-12 13:42:59 INFO     [Teacher] epoch#15
+2022-09-12 13:43:02 INFO     loss: 0.10046901926398277
+2022-09-12 13:43:05 INFO     [Valid] Precision: 0.6569, Recall: 1.0000, F1: 0.7929
+2022-09-12 13:43:08 INFO     [Test] Precision: 0.7806, Recall: 0.7610, F1: 0.7707
+2022-09-12 13:43:08 INFO     [Teacher] epoch#16
+2022-09-12 13:43:11 INFO     loss: 0.10295438300818205
+2022-09-12 13:43:14 INFO     [Valid] Precision: 0.6653, Recall: 1.0000, F1: 0.7990
+2022-09-12 13:43:17 INFO     [Test] Precision: 0.6520, Recall: 0.8365, F1: 0.7328
+2022-09-12 13:43:17 INFO     [Teacher] epoch#17
+2022-09-12 13:43:20 INFO     loss: 0.07502826675772667
+2022-09-12 13:43:23 INFO     [Valid] Precision: 0.9006, Recall: 0.9809, F1: 0.9390
+2022-09-12 13:43:26 INFO     [Test] Precision: 0.8235, Recall: 0.5283, F1: 0.6437
+2022-09-12 13:43:26 INFO     [Teacher] epoch#18
+2022-09-12 13:43:29 INFO     loss: 0.08875946514308453
+2022-09-12 13:43:32 INFO     [Valid] Precision: 0.8580, Recall: 0.9618, F1: 0.9069
+2022-09-12 13:43:35 INFO     [Test] Precision: 0.8649, Recall: 0.6038, F1: 0.7111
+2022-09-12 13:43:35 INFO     [Teacher] epoch#19
+2022-09-12 13:43:38 INFO     loss: 0.08288583531975746
+2022-09-12 13:43:41 INFO     [Valid] Precision: 0.6542, Recall: 1.0000, F1: 0.7909
+2022-09-12 13:43:43 INFO     [Test] Precision: 0.7833, Recall: 0.8868, F1: 0.8319
+2022-09-12 13:43:43 INFO     [Teacher] epoch#20
+2022-09-12 13:43:47 INFO     loss: 0.06044958718121052
+2022-09-12 13:43:50 INFO     [Valid] Precision: 0.7169, Recall: 1.0000, F1: 0.8351
+2022-09-12 13:43:52 INFO     [Test] Precision: 0.8478, Recall: 0.7358, F1: 0.7879
+2022-09-12 13:43:52 INFO     [Teacher] epoch#21
+2022-09-12 13:43:54 INFO     loss: 0.04028820525854826
+2022-09-12 13:43:55 INFO     [Valid] Precision: 0.5858, Recall: 1.0000, F1: 0.7388
+2022-09-12 13:43:57 INFO     [Test] Precision: 0.7383, Recall: 0.9937, F1: 0.8472
+2022-09-12 13:43:57 INFO     [Teacher] epoch#22
+2022-09-12 13:43:58 INFO     loss: 0.032666127663105726
+2022-09-12 13:43:59 INFO     [Valid] Precision: 0.5433, Recall: 1.0000, F1: 0.7040
+2022-09-12 13:44:01 INFO     [Test] Precision: 0.7117, Recall: 0.9937, F1: 0.8294
+2022-09-12 13:44:01 INFO     [Teacher] epoch#23
+2022-09-12 13:44:02 INFO     loss: 0.04087548516690731
+2022-09-12 13:44:04 INFO     [Valid] Precision: 0.5358, Recall: 1.0000, F1: 0.6978
+2022-09-12 13:44:05 INFO     [Test] Precision: 0.7104, Recall: 0.9874, F1: 0.8263
+2022-09-12 13:44:05 INFO     [Teacher] epoch#24
+2022-09-12 13:44:07 INFO     loss: 0.032211490906775
+2022-09-12 13:44:08 INFO     [Valid] Precision: 0.5751, Recall: 1.0000, F1: 0.7302
+2022-09-12 13:44:09 INFO     [Test] Precision: 0.7379, Recall: 0.9560, F1: 0.8329
+2022-09-12 13:44:09 INFO     [Teacher] epoch#25
+2022-09-12 13:44:11 INFO     loss: 0.03724519908428192
+2022-09-12 13:44:12 INFO     [Valid] Precision: 0.5322, Recall: 1.0000, F1: 0.6947
+2022-09-12 13:44:13 INFO     [Test] Precision: 0.6356, Recall: 0.9874, F1: 0.7734
+2022-09-12 13:44:13 INFO     [Teacher] epoch#26
+2022-09-12 13:44:15 INFO     loss: 0.057060688734054565
+2022-09-12 13:44:16 INFO     [Valid] Precision: 0.4729, Recall: 1.0000, F1: 0.6421
+2022-09-12 13:44:18 INFO     [Test] Precision: 0.5232, Recall: 0.9937, F1: 0.6855
+2022-09-12 13:44:18 INFO     [Teacher] epoch#27
+2022-09-12 13:44:19 INFO     loss: 0.03869695961475372
+2022-09-12 13:44:21 INFO     [Valid] Precision: 0.5451, Recall: 1.0000, F1: 0.7056
+2022-09-12 13:44:22 INFO     [Test] Precision: 0.6724, Recall: 0.9811, F1: 0.7980
+2022-09-12 13:44:22 INFO     [Teacher] epoch#28
+2022-09-12 13:44:23 INFO     loss: 0.022502177394926548
+2022-09-12 13:44:25 INFO     [Valid] Precision: 0.5925, Recall: 1.0000, F1: 0.7441
+2022-09-12 13:44:26 INFO     [Test] Precision: 0.7720, Recall: 0.9371, F1: 0.8466
+2022-09-12 13:44:26 INFO     [Teacher] epoch#29
+2022-09-12 13:44:28 INFO     loss: 0.018153861165046692
+2022-09-12 13:44:29 INFO     [Valid] Precision: 0.6206, Recall: 1.0000, F1: 0.7659
+2022-09-12 13:44:30 INFO     [Test] Precision: 0.7853, Recall: 0.8742, F1: 0.8274
+2022-09-12 13:44:30 INFO     [Teacher] epoch#30
+2022-09-12 13:44:32 INFO     loss: 0.01912747835740447
+2022-09-12 13:44:33 INFO     [Valid] Precision: 0.6109, Recall: 1.0000, F1: 0.7585
+2022-09-12 13:44:35 INFO     [Test] Precision: 0.7956, Recall: 0.9057, F1: 0.8471
+2022-09-12 13:44:35 INFO     [Teacher] epoch#31
+2022-09-12 13:44:36 INFO     loss: 0.014840490184724331
+2022-09-12 13:44:37 INFO     [Valid] Precision: 0.5815, Recall: 1.0000, F1: 0.7354
+2022-09-12 13:44:39 INFO     [Test] Precision: 0.7600, Recall: 0.9560, F1: 0.8468
+2022-09-12 13:44:39 INFO     [Teacher] epoch#32
+2022-09-12 13:44:40 INFO     loss: 0.012805774807929993
+2022-09-12 13:44:42 INFO     [Valid] Precision: 0.5607, Recall: 1.0000, F1: 0.7185
+2022-09-12 13:44:43 INFO     [Test] Precision: 0.7561, Recall: 0.9748, F1: 0.8516
+2022-09-12 13:44:43 INFO     [Teacher] epoch#33
+2022-09-12 13:44:45 INFO     loss: 0.025335899321362376
+2022-09-12 13:44:46 INFO     [Valid] Precision: 0.6408, Recall: 1.0000, F1: 0.7811
+2022-09-12 13:44:47 INFO     [Test] Precision: 0.8165, Recall: 0.8113, F1: 0.8139
+2022-09-12 13:44:47 INFO     [Teacher] epoch#34
+2022-09-12 13:44:49 INFO     loss: 0.01399795594625175
+2022-09-12 13:44:50 INFO     [Valid] Precision: 0.7441, Recall: 1.0000, F1: 0.8533
+2022-09-12 13:44:51 INFO     [Test] Precision: 0.8224, Recall: 0.5535, F1: 0.6617
+2022-09-12 13:44:51 INFO     [Teacher] epoch#35
+2022-09-12 13:44:53 INFO     loss: 0.02131884335540235
+2022-09-12 13:44:54 INFO     [Valid] Precision: 0.6109, Recall: 1.0000, F1: 0.7585
+2022-09-12 13:44:56 INFO     [Test] Precision: 0.8090, Recall: 0.9057, F1: 0.8546
+2022-09-12 13:44:56 INFO     [Teacher] epoch#36
+2022-09-12 13:44:57 INFO     loss: 0.009211777476593852
+2022-09-12 13:44:59 INFO     [Valid] Precision: 0.5148, Recall: 1.0000, F1: 0.6797
+2022-09-12 13:45:00 INFO     [Test] Precision: 0.6397, Recall: 0.9937, F1: 0.7783
+2022-09-12 13:45:00 INFO     [Teacher] epoch#37
+2022-09-12 13:45:01 INFO     loss: 0.015516750514507294
+2022-09-12 13:45:03 INFO     [Valid] Precision: 0.5647, Recall: 1.0000, F1: 0.7218
+2022-09-12 13:45:04 INFO     [Test] Precision: 0.7110, Recall: 0.9748, F1: 0.8223
+2022-09-12 13:45:04 INFO     [Teacher] epoch#38
+2022-09-12 13:45:07 INFO     loss: 0.00728260725736618
+2022-09-12 13:45:10 INFO     [Valid] Precision: 0.6681, Recall: 1.0000, F1: 0.8010
+2022-09-12 13:45:12 INFO     [Test] Precision: 0.7961, Recall: 0.7610, F1: 0.7781
+2022-09-12 13:45:12 INFO     [Teacher] epoch#39
+2022-09-12 13:45:16 INFO     loss: 0.012534277979284525
+2022-09-12 13:45:18 INFO     [Valid] Precision: 0.7169, Recall: 1.0000, F1: 0.8351
+2022-09-12 13:45:21 INFO     [Test] Precision: 0.8000, Recall: 0.6792, F1: 0.7347
+2022-09-12 13:45:21 INFO     [Teacher] epoch#40
+2022-09-12 13:45:24 INFO     loss: 0.006832331418991089
+2022-09-12 13:45:27 INFO     [Valid] Precision: 0.6569, Recall: 1.0000, F1: 0.7929
+2022-09-12 13:45:30 INFO     [Test] Precision: 0.7225, Recall: 0.7862, F1: 0.7530
+2022-09-12 13:45:30 INFO     [Teacher] epoch#41
+2022-09-12 13:45:33 INFO     loss: 0.00574108213186264
+2022-09-12 13:45:36 INFO     [Valid] Precision: 0.6230, Recall: 1.0000, F1: 0.7677
+2022-09-12 13:45:39 INFO     [Test] Precision: 0.6651, Recall: 0.8742, F1: 0.7554
+2022-09-12 13:45:39 INFO     [Teacher] epoch#42
+2022-09-12 13:45:42 INFO     loss: 0.006749823689460754
+2022-09-12 13:45:45 INFO     [Valid] Precision: 0.6280, Recall: 1.0000, F1: 0.7715
+2022-09-12 13:45:48 INFO     [Test] Precision: 0.6667, Recall: 0.8679, F1: 0.7541
+2022-09-12 13:45:48 INFO     [Teacher] epoch#43
+2022-09-12 13:45:51 INFO     loss: 0.005409966106526554
+2022-09-12 13:45:54 INFO     [Valid] Precision: 0.6488, Recall: 1.0000, F1: 0.7870
+2022-09-12 13:45:57 INFO     [Test] Precision: 0.7095, Recall: 0.7987, F1: 0.7515
+2022-09-12 13:45:57 INFO     [Teacher] epoch#44
+2022-09-12 13:46:00 INFO     loss: 0.0055161299533210695
+2022-09-12 13:46:03 INFO     [Valid] Precision: 0.6886, Recall: 1.0000, F1: 0.8156
+2022-09-12 13:46:06 INFO     [Test] Precision: 0.7651, Recall: 0.7170, F1: 0.7403
+2022-09-12 13:46:06 INFO     [Teacher] epoch#45
+2022-09-12 13:46:09 INFO     loss: 0.004516221582889557
+2022-09-12 13:46:12 INFO     [Valid] Precision: 0.7202, Recall: 1.0000, F1: 0.8373
+2022-09-12 13:46:15 INFO     [Test] Precision: 0.7955, Recall: 0.6604, F1: 0.7216
+2022-09-12 13:46:15 INFO     [Teacher] epoch#46
+2022-09-12 13:46:18 INFO     loss: 0.004043017630465329
+2022-09-12 13:46:21 INFO     [Valid] Precision: 0.7302, Recall: 1.0000, F1: 0.8441
+2022-09-12 13:46:23 INFO     [Test] Precision: 0.7937, Recall: 0.6289, F1: 0.7018
+2022-09-12 13:46:23 INFO     [Teacher] epoch#47
+2022-09-12 13:46:27 INFO     loss: 0.005451133183669299
+2022-09-12 13:46:30 INFO     [Valid] Precision: 0.7009, Recall: 1.0000, F1: 0.8241
+2022-09-12 13:46:32 INFO     [Test] Precision: 0.7842, Recall: 0.6855, F1: 0.7315
+2022-09-12 13:46:32 INFO     [Teacher] epoch#48
+2022-09-12 13:46:36 INFO     loss: 0.0037295728106983006
+2022-09-12 13:46:38 INFO     [Valid] Precision: 0.6653, Recall: 1.0000, F1: 0.7990
+2022-09-12 13:46:41 INFO     [Test] Precision: 0.7372, Recall: 0.7233, F1: 0.7302
+2022-09-12 13:46:41 INFO     [Teacher] epoch#49
+2022-09-12 13:46:44 INFO     loss: 0.0030137311259750277
+2022-09-12 13:46:47 INFO     [Valid] Precision: 0.6488, Recall: 1.0000, F1: 0.7870
+2022-09-12 13:46:50 INFO     [Test] Precision: 0.7195, Recall: 0.7421, F1: 0.7307
+2022-09-12 13:46:50 INFO     [Teacher] epoch#50
+2022-09-12 13:46:53 INFO     loss: 0.0029711414827033877
+2022-09-12 13:46:56 INFO     [Valid] Precision: 0.6488, Recall: 1.0000, F1: 0.7870
+2022-09-12 13:46:59 INFO     [Test] Precision: 0.7176, Recall: 0.7673, F1: 0.7416
+2022-09-12 13:46:59 INFO     [Teacher] epoch#51
+2022-09-12 13:47:02 INFO     loss: 0.0029022592352703214
+2022-09-12 13:47:05 INFO     [Valid] Precision: 0.6434, Recall: 1.0000, F1: 0.7830
+2022-09-12 13:47:08 INFO     [Test] Precision: 0.7110, Recall: 0.7736, F1: 0.7410
+2022-09-12 13:47:08 INFO     [Teacher] epoch#52
+2022-09-12 13:47:11 INFO     loss: 0.002633188443724066
+2022-09-12 13:47:14 INFO     [Valid] Precision: 0.6434, Recall: 1.0000, F1: 0.7830
+2022-09-12 13:47:17 INFO     [Test] Precision: 0.7110, Recall: 0.7736, F1: 0.7410
+2022-09-12 13:47:17 INFO     [Teacher] epoch#53
+2022-09-12 13:47:20 INFO     loss: 0.0028780288994312286
+2022-09-12 13:47:23 INFO     [Valid] Precision: 0.6488, Recall: 1.0000, F1: 0.7870
+2022-09-12 13:47:26 INFO     [Test] Precision: 0.7256, Recall: 0.7484, F1: 0.7368
+2022-09-12 13:47:26 INFO     [Teacher] epoch#54
+2022-09-12 13:47:29 INFO     loss: 0.0023233284009620547
+2022-09-12 13:47:32 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:47:35 INFO     [Test] Precision: 0.7329, Recall: 0.7421, F1: 0.7375
+2022-09-12 13:47:35 INFO     [Teacher] epoch#55
+2022-09-12 13:47:38 INFO     loss: 0.002287350071128458
+2022-09-12 13:47:41 INFO     [Valid] Precision: 0.6597, Recall: 1.0000, F1: 0.7949
+2022-09-12 13:47:44 INFO     [Test] Precision: 0.7389, Recall: 0.7296, F1: 0.7342
+2022-09-12 13:47:44 INFO     [Teacher] epoch#56
+2022-09-12 13:47:47 INFO     loss: 0.002034555043792352
+2022-09-12 13:47:50 INFO     [Valid] Precision: 0.6597, Recall: 1.0000, F1: 0.7949
+2022-09-12 13:47:52 INFO     [Test] Precision: 0.7436, Recall: 0.7296, F1: 0.7365
+2022-09-12 13:47:52 INFO     [Teacher] epoch#57
+2022-09-12 13:47:56 INFO     loss: 0.0020110559125896543
+2022-09-12 13:47:59 INFO     [Valid] Precision: 0.6597, Recall: 1.0000, F1: 0.7949
+2022-09-12 13:48:01 INFO     [Test] Precision: 0.7436, Recall: 0.7296, F1: 0.7365
+2022-09-12 13:48:01 INFO     [Teacher] epoch#58
+2022-09-12 13:48:05 INFO     loss: 0.002004918234888464
+2022-09-12 13:48:07 INFO     [Valid] Precision: 0.6597, Recall: 1.0000, F1: 0.7949
+2022-09-12 13:48:10 INFO     [Test] Precision: 0.7436, Recall: 0.7296, F1: 0.7365
+2022-09-12 13:48:10 INFO     [Teacher] epoch#59
+2022-09-12 13:48:14 INFO     loss: 0.0017795804888010025
+2022-09-12 13:48:16 INFO     [Valid] Precision: 0.6569, Recall: 1.0000, F1: 0.7929
+2022-09-12 13:48:19 INFO     [Test] Precision: 0.7452, Recall: 0.7358, F1: 0.7405
+2022-09-12 13:48:19 INFO     [Teacher] epoch#60
+2022-09-12 13:48:22 INFO     loss: 0.0017166999750770628
+2022-09-12 13:48:25 INFO     [Valid] Precision: 0.6542, Recall: 1.0000, F1: 0.7909
+2022-09-12 13:48:28 INFO     [Test] Precision: 0.7358, Recall: 0.7358, F1: 0.7358
+2022-09-12 13:48:28 INFO     [Teacher] epoch#61
+2022-09-12 13:48:31 INFO     loss: 0.0017631719238124788
+2022-09-12 13:48:34 INFO     [Valid] Precision: 0.6542, Recall: 1.0000, F1: 0.7909
+2022-09-12 13:48:37 INFO     [Test] Precision: 0.7358, Recall: 0.7358, F1: 0.7358
+2022-09-12 13:48:37 INFO     [Teacher] epoch#62
+2022-09-12 13:48:40 INFO     loss: 0.0015687245468143374
+2022-09-12 13:48:43 INFO     [Valid] Precision: 0.6542, Recall: 1.0000, F1: 0.7909
+2022-09-12 13:48:46 INFO     [Test] Precision: 0.7375, Recall: 0.7421, F1: 0.7398
+2022-09-12 13:48:46 INFO     [Teacher] epoch#63
+2022-09-12 13:48:49 INFO     loss: 0.0015119221061468124
+2022-09-12 13:48:52 INFO     [Valid] Precision: 0.6542, Recall: 1.0000, F1: 0.7909
+2022-09-12 13:48:55 INFO     [Test] Precision: 0.7391, Recall: 0.7484, F1: 0.7438
+2022-09-12 13:48:55 INFO     [Teacher] epoch#64
+2022-09-12 13:48:58 INFO     loss: 0.0014812560402788222
+2022-09-12 13:49:01 INFO     [Valid] Precision: 0.6542, Recall: 1.0000, F1: 0.7909
+2022-09-12 13:49:04 INFO     [Test] Precision: 0.7346, Recall: 0.7484, F1: 0.7414
+2022-09-12 13:49:04 INFO     [Teacher] epoch#65
+2022-09-12 13:49:07 INFO     loss: 0.0013801096356473863
+2022-09-12 13:49:10 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:49:13 INFO     [Test] Precision: 0.7346, Recall: 0.7484, F1: 0.7414
+2022-09-12 13:49:13 INFO     [Teacher] epoch#66
+2022-09-12 13:49:16 INFO     loss: 0.0013123511162120849
+2022-09-12 13:49:19 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:49:22 INFO     [Test] Precision: 0.7346, Recall: 0.7484, F1: 0.7414
+2022-09-12 13:49:22 INFO     [Teacher] epoch#67
+2022-09-12 13:49:25 INFO     loss: 0.0013682166463695467
+2022-09-12 13:49:28 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:49:30 INFO     [Test] Precision: 0.7346, Recall: 0.7484, F1: 0.7414
+2022-09-12 13:49:30 INFO     [Teacher] epoch#68
+2022-09-12 13:49:34 INFO     loss: 0.001274899987038225
+2022-09-12 13:49:37 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:49:39 INFO     [Test] Precision: 0.7301, Recall: 0.7484, F1: 0.7391
+2022-09-12 13:49:39 INFO     [Teacher] epoch#69
+2022-09-12 13:49:43 INFO     loss: 0.0012906489137094468
+2022-09-12 13:49:45 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:49:48 INFO     [Test] Precision: 0.7349, Recall: 0.7673, F1: 0.7508
+2022-09-12 13:49:48 INFO     [Teacher] epoch#70
+2022-09-12 13:49:51 INFO     loss: 0.0011744429939426482
+2022-09-12 13:49:54 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:49:57 INFO     [Test] Precision: 0.7305, Recall: 0.7673, F1: 0.7485
+2022-09-12 13:49:57 INFO     [Teacher] epoch#71
+2022-09-12 13:50:00 INFO     loss: 0.001154376455815509
+2022-09-12 13:50:03 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:50:06 INFO     [Test] Precision: 0.7305, Recall: 0.7673, F1: 0.7485
+2022-09-12 13:50:06 INFO     [Teacher] epoch#72
+2022-09-12 13:50:09 INFO     loss: 0.0011486716975923628
+2022-09-12 13:50:12 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:50:15 INFO     [Test] Precision: 0.7321, Recall: 0.7736, F1: 0.7523
+2022-09-12 13:50:15 INFO     [Teacher] epoch#73
+2022-09-12 13:50:18 INFO     loss: 0.0010706537577789277
+2022-09-12 13:50:21 INFO     [Valid] Precision: 0.6515, Recall: 1.0000, F1: 0.7889
+2022-09-12 13:50:24 INFO     [Test] Precision: 0.7321, Recall: 0.7736, F1: 0.7523
+2022-09-12 13:50:24 INFO     [Teacher] epoch#74
+2022-09-12 13:50:27 INFO     loss: 0.001022509444737807
+2022-09-12 13:50:30 INFO     [Valid] Precision: 0.6434, Recall: 1.0000, F1: 0.7830
+2022-09-12 13:50:33 INFO     [Test] Precision: 0.7321, Recall: 0.7736, F1: 0.7523
+2022-09-12 13:50:33 INFO     [Teacher] epoch#75
+2022-09-12 13:50:36 INFO     loss: 0.0009920259180944413
+2022-09-12 13:50:39 INFO     [Valid] Precision: 0.6434, Recall: 1.0000, F1: 0.7830
+2022-09-12 13:50:42 INFO     [Test] Precision: 0.7278, Recall: 0.7736, F1: 0.7500
+2022-09-12 13:50:42 INFO     [Teacher] epoch#76
+2022-09-12 13:50:45 INFO     loss: 0.0009688703139545396
+2022-09-12 13:50:48 INFO     [Valid] Precision: 0.6434, Recall: 1.0000, F1: 0.7830
+2022-09-12 13:50:51 INFO     [Test] Precision: 0.7278, Recall: 0.7736, F1: 0.7500
+2022-09-12 13:50:51 INFO     [Teacher] epoch#77
+2022-09-12 13:50:54 INFO     loss: 0.0009315740317106247
+2022-09-12 13:50:57 INFO     [Valid] Precision: 0.6434, Recall: 1.0000, F1: 0.7830
+2022-09-12 13:51:00 INFO     [Test] Precision: 0.7278, Recall: 0.7736, F1: 0.7500
+2022-09-12 13:51:00 INFO     [Teacher] epoch#78
+2022-09-12 13:51:03 INFO     loss: 0.0009272636089008301
+2022-09-12 13:51:06 INFO     [Valid] Precision: 0.6408, Recall: 1.0000, F1: 0.7811
+2022-09-12 13:51:08 INFO     [Test] Precision: 0.7278, Recall: 0.7736, F1: 0.7500
+2022-09-12 13:51:08 INFO     [Teacher] epoch#79
+2022-09-12 13:51:12 INFO     loss: 0.0009106538636842743
+2022-09-12 13:51:15 INFO     [Valid] Precision: 0.6408, Recall: 1.0000, F1: 0.7811
+2022-09-12 13:51:17 INFO     [Test] Precision: 0.7278, Recall: 0.7736, F1: 0.7500
+2022-09-12 13:51:17 INFO     [Teacher] epoch#80
+2022-09-12 13:51:21 INFO     loss: 0.0014503446582239121
+2022-09-12 13:51:23 INFO     [Valid] Precision: 0.6681, Recall: 1.0000, F1: 0.8010
+2022-09-12 13:51:26 INFO     [Test] Precision: 0.7532, Recall: 0.7296, F1: 0.7412
+2022-09-12 13:51:26 INFO     [Teacher] epoch#81
+2022-09-12 13:51:29 INFO     loss: 0.0008782024669926614
+2022-09-12 13:51:32 INFO     [Valid] Precision: 0.7104, Recall: 1.0000, F1: 0.8307
+2022-09-12 13:51:35 INFO     [Test] Precision: 0.7926, Recall: 0.6730, F1: 0.7279
+2022-09-12 13:51:35 INFO     [Teacher] epoch#82
+2022-09-12 13:51:38 INFO     loss: 0.0008762994984863326
+2022-09-12 13:51:41 INFO     [Valid] Precision: 0.7371, Recall: 1.0000, F1: 0.8486
+2022-09-12 13:51:44 INFO     [Test] Precision: 0.7879, Recall: 0.6541, F1: 0.7148
+2022-09-12 13:51:44 INFO     [Teacher] epoch#83
+2022-09-12 13:51:47 INFO     loss: 0.0008938940445659682
+2022-09-12 13:51:50 INFO     [Valid] Precision: 0.7548, Recall: 1.0000, F1: 0.8603
+2022-09-12 13:51:53 INFO     [Test] Precision: 0.7984, Recall: 0.6226, F1: 0.6996
+2022-09-12 13:51:53 INFO     [Teacher] epoch#84
+2022-09-12 13:51:56 INFO     loss: 0.0008085263689281419
+2022-09-12 13:51:59 INFO     [Valid] Precision: 0.7734, Recall: 1.0000, F1: 0.8722
+2022-09-12 13:52:02 INFO     [Test] Precision: 0.8017, Recall: 0.6101, F1: 0.6929
+2022-09-12 13:52:02 INFO     [Teacher] epoch#85
+2022-09-12 13:52:05 INFO     loss: 0.0008477084338665009
+2022-09-12 13:52:08 INFO     [Valid] Precision: 0.7811, Recall: 1.0000, F1: 0.8771
+2022-09-12 13:52:11 INFO     [Test] Precision: 0.8000, Recall: 0.6038, F1: 0.6882
+2022-09-12 13:52:11 INFO     [Teacher] epoch#86
+2022-09-12 13:52:14 INFO     loss: 0.0008649474766571075
+2022-09-12 13:52:17 INFO     [Valid] Precision: 0.7811, Recall: 1.0000, F1: 0.8771
+2022-09-12 13:52:20 INFO     [Test] Precision: 0.8000, Recall: 0.6038, F1: 0.6882
+2022-09-12 13:52:20 INFO     [Teacher] epoch#87
+2022-09-12 13:52:23 INFO     loss: 0.0008097884419839829
+2022-09-12 13:52:26 INFO     [Valid] Precision: 0.7811, Recall: 1.0000, F1: 0.8771
+2022-09-12 13:52:29 INFO     [Test] Precision: 0.8017, Recall: 0.6101, F1: 0.6929
+2022-09-12 13:52:29 INFO     [Teacher] epoch#88
+2022-09-12 13:52:32 INFO     loss: 0.0008390527218580246
+2022-09-12 13:52:35 INFO     [Valid] Precision: 0.7734, Recall: 1.0000, F1: 0.8722
+2022-09-12 13:52:37 INFO     [Test] Precision: 0.8049, Recall: 0.6226, F1: 0.7021
+2022-09-12 13:52:37 INFO     [Teacher] epoch#89
+2022-09-12 13:52:41 INFO     loss: 0.0007212223281385377
+2022-09-12 13:52:44 INFO     [Valid] Precision: 0.7659, Recall: 1.0000, F1: 0.8674
+2022-09-12 13:52:46 INFO     [Test] Precision: 0.7984, Recall: 0.6226, F1: 0.6996
+2022-09-12 13:52:46 INFO     [Teacher] epoch#90
+2022-09-12 13:52:50 INFO     loss: 0.0008050666365306824
+2022-09-12 13:52:52 INFO     [Valid] Precision: 0.7548, Recall: 1.0000, F1: 0.8603
+2022-09-12 13:52:55 INFO     [Test] Precision: 0.7923, Recall: 0.6478, F1: 0.7128
+2022-09-12 13:52:55 INFO     [Teacher] epoch#91
+2022-09-12 13:52:58 INFO     loss: 0.0007211028423625976
+2022-09-12 13:53:01 INFO     [Valid] Precision: 0.7406, Recall: 1.0000, F1: 0.8509
+2022-09-12 13:53:04 INFO     [Test] Precision: 0.7939, Recall: 0.6541, F1: 0.7172
+2022-09-12 13:53:04 INFO     [Teacher] epoch#92
+2022-09-12 13:53:07 INFO     loss: 0.0007128639699658379
+2022-09-12 13:53:10 INFO     [Valid] Precision: 0.7371, Recall: 1.0000, F1: 0.8486
+2022-09-12 13:53:13 INFO     [Test] Precision: 0.7879, Recall: 0.6541, F1: 0.7148
+2022-09-12 13:53:13 INFO     [Teacher] epoch#93
+2022-09-12 13:53:16 INFO     loss: 0.0006348215247271582
+2022-09-12 13:53:19 INFO     [Valid] Precision: 0.7235, Recall: 1.0000, F1: 0.8396
+2022-09-12 13:53:22 INFO     [Test] Precision: 0.7895, Recall: 0.6604, F1: 0.7192
+2022-09-12 13:53:22 INFO     [Teacher] epoch#94
+2022-09-12 13:53:25 INFO     loss: 0.0006285929848672822
+2022-09-12 13:53:28 INFO     [Valid] Precision: 0.7235, Recall: 1.0000, F1: 0.8396
+2022-09-12 13:53:31 INFO     [Test] Precision: 0.7926, Recall: 0.6730, F1: 0.7279
+2022-09-12 13:53:31 INFO     [Teacher] epoch#95
+2022-09-12 13:53:34 INFO     loss: 0.0006004832684993744
+2022-09-12 13:53:37 INFO     [Valid] Precision: 0.7202, Recall: 1.0000, F1: 0.8373
+2022-09-12 13:53:40 INFO     [Test] Precision: 0.7883, Recall: 0.6792, F1: 0.7297
+2022-09-12 13:53:40 INFO     [Teacher] epoch#96
+2022-09-12 13:53:43 INFO     loss: 0.0006372344505507499
+2022-09-12 13:53:46 INFO     [Valid] Precision: 0.7169, Recall: 1.0000, F1: 0.8351
+2022-09-12 13:53:49 INFO     [Test] Precision: 0.7899, Recall: 0.6855, F1: 0.7340
+2022-09-12 13:53:49 INFO     [Teacher] epoch#97
+2022-09-12 13:53:52 INFO     loss: 0.0006097443401813507
+2022-09-12 13:53:55 INFO     [Valid] Precision: 0.7169, Recall: 1.0000, F1: 0.8351
+2022-09-12 13:53:57 INFO     [Test] Precision: 0.7899, Recall: 0.6855, F1: 0.7340
+2022-09-12 13:53:57 INFO     [Teacher] epoch#98
+2022-09-12 13:54:01 INFO     loss: 0.0005589621141552925
+2022-09-12 13:54:04 INFO     [Valid] Precision: 0.7104, Recall: 1.0000, F1: 0.8307
+2022-09-12 13:54:06 INFO     [Test] Precision: 0.7914, Recall: 0.6918, F1: 0.7383
+2022-09-12 13:54:06 INFO     [Teacher] epoch#99
+2022-09-12 13:54:10 INFO     loss: 0.0005526158201973885
+2022-09-12 13:54:12 INFO     [Valid] Precision: 0.7104, Recall: 1.0000, F1: 0.8307
+2022-09-12 13:54:15 INFO     [Test] Precision: 0.7857, Recall: 0.6918, F1: 0.7358
+2022-09-12 13:54:15 INFO     [Teacher] epoch#100
+2022-09-12 13:54:19 INFO     loss: 0.0005673676932929084
+2022-09-12 13:54:21 INFO     [Valid] Precision: 0.7072, Recall: 1.0000, F1: 0.8285
+2022-09-12 13:54:24 INFO     [Test] Precision: 0.7801, Recall: 0.6918, F1: 0.7333
+2022-09-12 13:54:24 INFO     [Best Teacher in iter#1] Precision: 0.8235, Recall: 0.5283, F1: 0.6437
+2022-09-12 13:54:24 INFO     [Best in iter#1] Precision: 0.8235, Recall: 0.5283, F1: 0.6437

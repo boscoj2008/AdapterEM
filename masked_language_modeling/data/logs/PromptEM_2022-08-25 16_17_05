@@ -1,0 +1,34 @@
+2022-08-25 16:17:05 INFO     ====PromptEM Args====
+2022-08-25 16:17:05 INFO     seed: 2022
+2022-08-25 16:17:05 INFO     device: cuda
+2022-08-25 16:17:05 INFO     model_name_or_path: roberta-base
+2022-08-25 16:17:05 INFO     model_type: roberta
+2022-08-25 16:17:05 INFO     batch_size: 32
+2022-08-25 16:17:05 INFO     text_summarize: False
+2022-08-25 16:17:05 INFO     learning_rate: 5e-05
+2022-08-25 16:17:05 INFO     max_length: 512
+2022-08-25 16:17:05 INFO     add_token: True
+2022-08-25 16:17:05 INFO     data_name: semi-heter
+2022-08-25 16:17:05 INFO     template_no: 0
+2022-08-25 16:17:05 INFO     self_training: True
+2022-08-25 16:17:05 INFO     dynamic_dataset: 8
+2022-08-25 16:17:05 INFO     k: 0.1
+2022-08-25 16:17:05 INFO     num_iter: 1
+2022-08-25 16:17:05 INFO     pseudo_label_method: uncertainty
+2022-08-25 16:17:05 INFO     confidence_ratio: 0.1
+2022-08-25 16:17:05 INFO     mc_dropout_pass: 10
+2022-08-25 16:17:05 INFO     uncertainty_ratio: 0.05
+2022-08-25 16:17:05 INFO     el2n_ratio: 0.05
+2022-08-25 16:17:05 INFO     save_model: False
+2022-08-25 16:17:05 INFO     only_plm: True
+2022-08-25 16:17:05 INFO     teacher_epochs: 100
+2022-08-25 16:17:05 INFO     student_epochs: 50
+2022-08-25 16:17:05 INFO     test_pseudo_label: 
+2022-08-25 16:17:05 INFO     one_word: False
+2022-08-25 16:17:06 INFO     num_sample_pos: 47
+2022-08-25 16:17:06 INFO     num_sample_neg: 77
+2022-08-25 16:17:06 INFO     left size: 22133, right size: 23264
+2022-08-25 16:17:06 INFO     labeled train size: 124
+2022-08-25 16:17:06 INFO     unlabeled train size: 1116
+2022-08-25 16:17:06 INFO     valid size: 414
+2022-08-25 16:17:06 INFO     test size: 414
