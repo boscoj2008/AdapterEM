@@ -2,7 +2,7 @@
 
 abstract 
 
-Entity Matching (EM) involves identifying different data representations referring to the same entity from multiple data sources and is typically formulated as a binary classification problem. It is a challenging problem in data integration due to the heterogeneity of data representations. State-of-the-art solutions have adopted NLP techniques based on word embedding technology and pre-trained language models (PrLMs) via the fine-tuning paradigm yielding successful results in EM, however, sequential fine-tuning of overparameterized PrLMs can require costly parameter updates resulting in catastrophic forgetting, especially in low-resource scenarios. Our study proposes a parameter-efficient paradigm for fine-tuning PrLMs based on adapters, small neural networks introduced between the layers of a PrLM to mitigate problems introduced by regular fine-tuning, where only the adapter weights are updated via backpropagation while the PrLM parameters are frozen. Adapter-based methods have been successfully applied to multilingual speech problems achieving promising results, however, the effectiveness of these methods when applied to EM is not yet well understood, in particular for generalized EM with heterogeneous data. We show that by utilizing less than 13\% of the parameters with a significantly smaller computational footprint, our solution mitigates catastrophic forgetting and matches or outperforms regular fine-tuning and prompt-tuning baselines.
+Entity Matching (EM) involves identifying different data representations referring to the same entity from multiple data sources and is typically formulated as a binary classification problem. It is a challenging problem in data integration due to the heterogeneity of data representations. State-of-the-art solutions have adopted NLP techniques based on pre-trained language models (PrLMs) via the fine-tuning paradigm, however, sequential fine-tuning of overparameterized PrLMs can lead to catastrophic forgetting, especially in low-resource scenarios. In this study, we propose a parameter-efficient paradigm for fine-tuning PrLMs based on adapters, small neural networks encapsulated between layers of a PrLM, by optimizing only the adapter and classifier weights while the PrLM parameters are frozen. Adapter-based methods have been successfully applied to multilingual speech problems achieving promising results, however, the effectiveness of these methods when applied to EM is not yet well understood, particularly for generalized EM with heterogeneous data. Furthermore, we explore using (i) pre-trained adapters and (ii) invertible adapters to capture token-level language representations and demonstrate their benefits for transfer learning on the generalized EM benchmark. Our results show that our solution achieves comparable or superior performance to full-scale PrLM fine-tuning and prompt-tuning baselines while utilizing a significantly smaller computational footprint $\approx 13\%$ of the PrLM parameters.
 
 Paper [AdapterEM: Pre-trained Language Model Adaptation fo Generalized Entity Matching using Adapter-tuning](link).
 
@@ -72,5 +72,14 @@ bash train_slni_adapter.sh
 ```   
 
 
-## License
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
