@@ -28,7 +28,7 @@ We use eight real-world benchmark datasets with different structures from [Macha
 
 ## Fine-tuning
 
-To train and evaluate with AdapterEM with a randomly initialized adapter;
+To train and evaluate AdapterEM with a randomly initialized adapter;
 
 ```
 bash semi-homo.sh
