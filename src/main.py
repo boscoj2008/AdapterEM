@@ -1,3 +1,7 @@
+"""
+    Modifications based on PromptEM paper https://arxiv.org/pdf/2207.04802.pdf
+"""
+
 import logging
 from args import parse_args, parse_em_args
 from data import EMDataset

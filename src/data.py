@@ -3,7 +3,7 @@
  @Authors:- John Bosco Mugeni, Steven Lynden, Toshiyuki Amagasa, Matono Akiyohi
  @Institute:- National Institute Of Science & Technology, Tokyo Waterfront, Japan.
  
- - Modifications have been made in part to the training code of PromptEM paper https://arxiv.org/pdf/2207.04802.pdf to devise AdapterEM.
+ - Modifications based on PromptEM paper https://arxiv.org/pdf/2207.04802.pdf
 """
 
 
