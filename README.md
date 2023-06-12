@@ -68,7 +68,6 @@ The meaning of the flags:
 
 ```
 bash train_slni_adapter.sh
-
 ```   
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
