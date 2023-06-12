@@ -1,0 +1,12 @@
+NOTICE
+This work includes code from the PromptEM software, which is licensed under the Apache License 2.0. Below are the attribution notices for the code used in this work:
+
+
+- PromptEM Library: Copyright (c) [2023] [Pengfei Wang]
+  This library is used under the terms of the PromptEM Library License, which can be found at [https://github.com/ZJU-DAILY/PromptEM].
+
+- Ditto Library: Copyright (c) [2021] [Yuliang Li]
+  The Ditto Library is licensed under the Apache License 2.0. Please refer to [https://github.com/megagonlabs/ditto] for more information.
+
+
+The contents of this NOTICE file are provided for informational purposes only and do not modify the terms of the license for this work.
